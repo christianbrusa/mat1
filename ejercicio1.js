@@ -17,7 +17,7 @@ function capitalizeFirstLetter(palabra) {
 
 //despues se crea una variable que es p "pasado a mayuscula"
 
-//por ultimo se devuelve ambas partes juntas. 
+//por ultimo se devuelve ambas partes juntas..
 
 
 module.exports = capitalizeFirstLetter;

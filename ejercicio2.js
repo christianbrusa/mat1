@@ -1,5 +1,5 @@
 /* 
- * Dado un valor saber si es par
+ * Dado un valor saber si es par.
  * 
  */
 function esPar(numero) {
