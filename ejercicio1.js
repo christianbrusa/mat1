@@ -12,12 +12,4 @@ function capitalizeFirstLetter(palabra) {
 	return p1+r.join('');
 }
 
-//p es la primera letra de la palabra
-//...r es lo que resta de la palabra (spread operator)
-
-//despues se crea una variable que es p "pasado a mayuscula"
-
-//por ultimo se devuelve ambas partes juntas..
-
-
 module.exports = capitalizeFirstLetter;
