@@ -13,7 +13,7 @@
  * 
  */
 function deberiaRegargarNafta(auto) {
-	return auto.nafta < auto.capacidadTanque / 10
+	return auto.nafta < auto.capacidadTanque / 10;
 }
 
 
