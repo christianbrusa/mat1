@@ -13,7 +13,7 @@
  * 
  */
 function deberiaRegargarNafta(auto) {
-	return auto.nafta < 10
+	return auto.nafta < auto.capacidadTanque / 10
 }
 
 
@@ -24,7 +24,6 @@ function deberiaRegargarNafta(auto) {
 function necesitaCambiarAceite(auto) {
 	return auto.km > 15000;
 }
-
 
 
 module.exports = { deberiaRegargarNafta, necesitaCambiarAceite };
