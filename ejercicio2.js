@@ -2,6 +2,8 @@
  * Dado un valor saber si es par.
  * 
  */
+const _ = require("lodash");
+
 function esPar(numero) {
     return numero % 2 == 0
 }
@@ -21,13 +23,15 @@ function laColaEsPar(lista) {
         return false;
     }
 
-    for(i=0;i<resto.length;i++){
+    let verificaSiRestoEsPar = _.every(resto,esPar)
+    return verificaSiRestoEsPar;
+
+    /*for(i=0;i<resto.length;i++){
        if(!esPar(resto[i])){
         return false;
        } 
     }
-    return true;
-
+    return true;*/
 }
 
 module.exports = { esPar, laColaEsPar };
