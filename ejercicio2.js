@@ -15,23 +15,11 @@ function esPar(numero) {
 function laColaEsPar(lista) {
     const [primerNumero, ...resto] = lista;
 
-    /*if(lista.length < 2){
-        return false;
-    }*/
-
     if(resto.length == 0){
         return false;
     }
 
-    let verificaSiRestoEsPar = _.every(resto,esPar)
-    return verificaSiRestoEsPar;
-
-    /*for(i=0;i<resto.length;i++){
-       if(!esPar(resto[i])){
-        return false;
-       } 
-    }
-    return true;*/
+    return _.every(resto,esPar);
 }
 
 module.exports = { esPar, laColaEsPar };
